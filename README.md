@@ -7,6 +7,7 @@
 ## Lesson Objectives
 
 - [Installing Ruby](install-ruby.md)
+- [Running your Ruby Scripts](how-to-run-ruby.md)
 - Compare/contrast Ruby and Javascript as programming languages
 - Identify specific differences between Ruby and Javascript in the following areas...
   - Variables
@@ -709,21 +710,21 @@ classroom = {
 locations = {
  location_one: "DC",  
  location_two: "NY",  
- location_three: "Riyadh"  
+ location_three: "Jeddah"  
 }  
-# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Riyadh"}
+# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
 
 silly_hash = classroom.merge(locations)
-# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Riyadh"}
+# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
 
 classroom
 # => {:room=>1}
 
 locations
-# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Riyadh"}
+# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
 
 silly_hash
-# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Riyadh"}
+# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
 ```
 
 #### Ranges
