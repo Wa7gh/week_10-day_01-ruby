@@ -403,10 +403,26 @@ When you see an `unless foo`, read it as `if !foo`
 
 #### Ternary operator  
 
-A ternary operator looks just like we have seen in JS
+A ternary operator looks just like we have seen in JS `condition ? true : false`
+
+```ruby
+1 > 2 ? "condition is true" : "condition is false"
+```
+
+A more real life example is:
 
 ```ruby
 num.even? ? "#{num} is even!" : "#{num} is odd!"
+```
+
+Same as:
+
+```ruby
+if num.even?
+  "#{num} is even!"
+else
+  "#{num} is odd!"
+end
 ```
 
 ### The Bang Symbol (!)
