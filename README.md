@@ -177,15 +177,6 @@ $ ruby app.rb
 
 ## Data Types
 
-Spend 15 minutes reading through everything up until **Conditionals**.
-
->Why do we have to read all this ourselves?
->
->While we could re-teach you what numbers, strings, conditionals, etc. are like in Ruby, you know enough about programming languages from your experience with Javascript to pick up on this information yourself pretty quickly.
->
->Because of this, the peculiarities of Ruby will be apparent. These are the things you need to be aware of in the next few classes.
-
-
 ### Everything Is An Object!
 
 Everything in Ruby is an **object**.
