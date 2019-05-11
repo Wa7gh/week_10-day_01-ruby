@@ -63,10 +63,6 @@ Ruby is hyper readable, the lack of `;`, `()`, keywords like `var`, `return`, `f
 ```
 
 ```ruby
-exit unless "restaurant".include? "aura"
-```
-
-```ruby
 ['toast', 'cheese', 'cola'].each { |food| print food.capitalize  }
 ```
 
