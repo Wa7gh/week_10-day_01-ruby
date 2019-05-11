@@ -621,29 +621,29 @@ A Ruby hash is an unordered, dictionary-like collection organized by key-value p
 `tl;dr A hash is very similar to a Javascript object.`
 
 ```ruby
-usman = { name: 'Usman', age: 0 }
+sami = { name: 'Sami', age: 0 }
 ```
 
 Notice that is looks exactly like a JS object except the keys are symbols, not strings.
 
 ```ruby
 wdi_class = {
-  teacher: "Usman",  
-  students: ["Tony", "Steve", "Logan"],  
+  teacher: "Sami",  
+  students: ["Tony", "Steve", "Bruce"],  
   classroom: 3,
   in_session: true,  
   schedule: {  
     morning: "Ruby Basics",
   }
 }  
-# => {:teacher=>"Usman", :students=>["Tony", "Steve", "Logan"], :classroom=>3, :in_session=>true, :schedule=>{:morning=>"Ruby Basics"}}
+# => {:teacher=>"Sami", :students=>["Tony", "Steve", "Bruce"], :classroom=>3, :in_session=>true, :schedule=>{:morning=>"Ruby Basics"}}
 ```
 
 Accessing hash values...
 
 ```ruby
 wdi_class[:teacher]
-# => "Usman"
+# => "Sami"
 ```
 Modifying hash values...
 
@@ -656,8 +656,8 @@ You can also use strings as hash keys...
 
 ```ruby
 wdi_class = {
-  "teacher" => "Usman",  
-  "students" => ["Tony", "Steve", "Logan"],  
+  "teacher" => "Sami",  
+  "students" => ["Tony", "Steve", "Bruce"],  
   "classroom" => 3,  
   "in_session" => true,  
   "schedule" => {  
@@ -670,7 +670,7 @@ Then can access in this way...
 
 ```ruby
 wdi_class["teacher"]
-# => "Usman"
+# => "Sami"
 ```
 
 And modify...
