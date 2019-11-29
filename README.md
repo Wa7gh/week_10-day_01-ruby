@@ -6,7 +6,6 @@
 
 ## Lesson Objectives
 
-- [Installing Ruby](install-ruby.md)
 - [Running your Ruby Scripts](how-to-run-ruby.md)
 - Compare/contrast Ruby and Javascript as programming languages
 - Identify specific differences between Ruby and Javascript in the following areas...
@@ -34,18 +33,6 @@ Performing everyday tasks, while intricate and complex, come to you naturally.
 
 > "Ruby is simple in appearance, but is very complex inside, just like our human body." — Yukihiro "Matz" Matsumoto
 
-## Learning a New Language
-
-If you were going to learn a new programming language, what questions would you have? You've already learned one programming language, and you're about to learn another! Think about the things you now know how to do in JavaScript. With this knowledge, consider what you might want to know about Ruby. Take a few minutes to think about some questions that you have about this new language.
-
-Examples:
-
-- How do I define a variable in Ruby? Is it different than in JavaScript?
-- Where do I go for information about Ruby? What kind of documentation exists for it?
-- Does Ruby have functions?
-
-Ruby and JavaScript each have unique features that you may find useful or ineffective. At the end of the day, you'll find that they share many qualities.
-
 #### Flexibility
 
 Ruby is flexible making it ideal for coding. What this means is that there are no* blackboxes in Ruby. You can open up anything and change it. This could be a powerful tool in the hands of a skilled Rubyist.
@@ -56,14 +43,13 @@ Ruby is hyper readable, the lack of `;`, `()`, keywords like `var`, `return`, `f
 
 ![](images/pair.jpg)
 
-**Read the following aloud to yourself.**
 
 ```ruby
-5.times { print "Hello!" }
+5.times { print "Hi!" }
 ```
 
 ```ruby
-['toast', 'cheese', 'cola'].each { |food| print food.capitalize  }
+['grookey', 'scorbunny', 'sobble'].each { |pokemon| print pokemon.capitalize  }
 ```
 
 ```ruby
@@ -83,10 +69,6 @@ Ruby is hyper readable, the lack of `;`, `()`, keywords like `var`, `return`, `f
   # => nil
 ```
 
-#### Frameworks
-
-We're going to spend most of our time with Ruby learning Ruby on Rails. It's a application framework for Ruby that will allow us to make full stack web applications.
-
 ## Ruby Basics
 
 ### Variables
@@ -95,18 +77,18 @@ We no longer need to precede new variables with var. Just use the name of the va
 
 * Variables are instantiated as they are used
 ```rb
-name = "Mike"
+name = "Ebere"
 ```
 * Written in snake_case. That means all lower case with words separated by underscores.
 ```rb
-first_name = "Mike"
+first_name = "Ebere"
 ```
 * Variable names should still be semantic
 * Variables are still assigned using a single equals sign ( = )
 
 ```ruby
-my_favorite_animal = "flying squirrel"
-# => "flying squirrel"
+my_favorite_super_hero = "spoderman"
+# => "spoderman"
 ```
 
 Although we don't use var, there is still syntax to designate whether a variable is local or global.
@@ -227,22 +209,22 @@ Words, just like in Javascript.
   - Must instantiate string with double-quotes for escape characters to work
 
 ```rb
-name = "John"
-# => "John"
+name = "Peter"
+# => "Peter"
 
-full_name = "John\nDoe"
-# => "John\nDoe"
+full_name = "Peter\Parker"
+# => "Peter\Parker"
 
-single_quote = 'John\nDoe'
-# => "John\nDoe"
+single_quote = 'Peter\Parker'
+# => "Peter\Parker"
 
 puts full_name
-# John
-# Doe
+# Peter
+# Parker
 # => nil
 
 puts single_quote
-# John\nDoe
+# Peter\Parker
 # => nil
 ```
 
@@ -250,8 +232,8 @@ Not only can you concatenate strings, now you can multiply them too! Remember we
 
 ```rb
 # Concatenation
-"Hello " + "there!"
-# => "Hello there!"
+"Hey " + "there!"
+# => "Hey there!"
 
 # Multiplication
 "Hello there! " * 3
