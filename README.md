@@ -101,10 +101,6 @@ my_number = 10
 ```rb
 PI = 3.14
 ```
-* @ creates an instance variable, which we will cover later.
-```rb
-@user_id = 1
-```
 
 ### puts
 
