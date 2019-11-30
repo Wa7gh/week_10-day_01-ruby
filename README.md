@@ -440,44 +440,6 @@ a
 # => "CHEESEBURGER"
 ```
 
-### Symbols
-
-Symbols are immutable, constant values. That means they contain the same value through the entirety of a program and cannot be changed.
-
-- Kind of like a string that never changes
-- Syntax: variable_name = :symbol_name
-- No Javascript equivalent (until ES6 came along!))
-
-```ruby
-favorite_animal = :dog
-# => :dog
-
-favorite_animal.upcase!
-# NoMethodError: undefined method `upcase!' for :dog:Symbol
-# Did you mean?  upcase
-```
-#### When/why would you use symbols?
-
-* Most common use is as keys in hashes, the Ruby equivalent of objects (more on that later)
-* Make sure values that need to be constant stay constant
-* Enhance performance, use less memory
-
-Every string you create is unique and takes up space on your computer, even if they're the same value! When we're busy looking up key/value pairs, we don't want to be wasting memory - we want it to be fast!
-
-#### Let's watch:
-```ruby 
-"Your Name".object_id
-#=> a number
-
-"Your Name".object_id
-#=> a different number
-
-:your_name.object_id
-#=> a number
-
-:your_name.object_id
-#=> the same number!
-```
 ## Data Type Exercise - Lab (30 minutes) 
 Complete the exercises in [this document](data-types-exercises.md
 ).
@@ -592,11 +554,50 @@ numbers
 # => [3, 1, 4]
 ```
 
+### Symbols
+
+Symbols are immutable, constant values. That means they contain the same value through the entirety of a program and cannot be changed.
+
+- Kind of like a string that never changes
+- Syntax: variable_name = :symbol_name
+- No Javascript equivalent (until ES6 came along!))
+
+```ruby
+favorite_animal = :dog
+# => :dog
+
+favorite_animal.upcase!
+# NoMethodError: undefined method `upcase!' for :dog:Symbol
+# Did you mean?  upcase
+```
+#### When/why would you use symbols?
+
+* Most common use is as keys in hashes, the Ruby equivalent of objects (more on that later)
+* Make sure values that need to be constant stay constant
+* Enhance performance, use less memory
+
+Every string you create is unique and takes up space on your computer, even if they're the same value! When we're busy looking up key/value pairs, we don't want to be wasting memory - we want it to be fast!
+
+#### Let's watch:
+```ruby 
+"Your Name".object_id
+#=> a number
+
+"Your Name".object_id
+#=> a different number
+
+:your_name.object_id
+#=> a number
+
+:your_name.object_id
+#=> the same number!
+```
+
 ### Hashes
 
 A Ruby hash is an unordered, dictionary-like collection organized by key-value pairs.
 
-`tl;dr A hash is very similar to a Javascript object.`
+`A hash is very similar to a Javascript object.`
 
 ```ruby
 Ahmad = { name: 'Ahmad', age: 0 }
