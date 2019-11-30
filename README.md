@@ -784,6 +784,12 @@ In Ruby this is much cleaner:
 # > 1
 # > 2
 ```
+```
+names = ["Ebere","Yassir","Ahmad", "Atheer", "Mike", "Sami" , "Alanoud" ]
+names.length.times{ |i| puts "hello #{i} = #{names[i]}"}
+
+```
+
 
 `times` is a method that takes a _block_.  A block is just a chunk of code that may or may not take arguments.  The closest thing to a block in ES6-land would be an (anonymous) arrow function.
 
