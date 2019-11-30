@@ -236,16 +236,16 @@ Not only can you concatenate strings, now you can multiply them too! Remember we
 # => "Hey there!"
 
 # Multiplication
-"Hello there! " * 3
-# => "Hello there! Hello there! Hello there! "
+"Hey there! " * 3
+# => "Hey there! Hey there! Hey there! "
 ```
 
 You can concatenate strings but this is NOT recommend.
 
 ```ruby
-'foo' + 'bar' # => 'foobar'
-'foo' + 2 # => TypeError: no implicit conversion of Integer into String
-'foo' + 2.to_s # => 'foo2'
+'ryu' + 'ken' # => 'ryuken'
+'ryu' + 2 # => TypeError: no implicit conversion of Integer into String
+'ryu' + 2.to_s # => 'ryu2'
 ```
 
 Above we see that we can NOT implicitly convert a non-string into a string (unlike what we have seen in JS).
@@ -259,21 +259,21 @@ Use single quotes for strings that are not interpolated.
 Sometimes you will want to print out a string that incorporates a variable. For example...
 
 ```rb
-my_name = "Jim"
-# => "Jim"
+my_name = "Yassir"
+# => "Yassir"
 
 puts "Hi my name is: " + my_name
-# Hi my name is: Jim
+# Hi my name is: Yassir
 # => nil
 ```
 
 This works fine. Things aren't so simple when that variable is of a different data type. Like a number...
 
 ```rb
-class_number = 984
-# => 984
+class_number = 2
+# => 2
 
-puts "I am teaching WDI " + class_number
+puts "I am teaching SEI " + class_number
 # TypeError: no implicit conversion of Fixnum into String from (pry):26:in `+'
 ```
 
@@ -283,11 +283,11 @@ In cases like the above, you either need to convert the variable to a string usi
 * No Javascript equivalent [(until ES6 came along)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ```rb
-class_number = 42
-# => 42
+class_number = 9
+# => 9
 
-puts "I am teaching WDI #{class_number}"
-# I am teaching WDI 42
+puts "I am teaching SEI #{class_number}"
+# I am teaching SEI 9
 # => nil
 ```
 
@@ -319,8 +319,8 @@ Need to check if something is `nil`? Use `.nil?`
 > **NOTE:** Any method that ends with a `?` means it will return a boolean value.  
 
 ```rb
-something = "A thing"
-# => "A thing"
+something = "The Thing"
+# => "The Thing"
 
 something.nil?
 # => false
@@ -603,14 +603,14 @@ A Ruby hash is an unordered, dictionary-like collection organized by key-value p
 `tl;dr A hash is very similar to a Javascript object.`
 
 ```ruby
-sami = { name: 'Sami', age: 0 }
+Ahmad = { name: 'Ahmad', age: 0 }
 ```
 
 Notice that is looks exactly like a JS object except the keys are symbols, not strings.
 
 ```ruby
 wdi_class = {
-  teacher: "Sami",  
+  teacher: "Ahmad",  
   students: ["Tony", "Steve", "Bruce"],  
   classroom: 3,
   in_session: true,  
@@ -618,47 +618,47 @@ wdi_class = {
     morning: "Ruby Basics",
   }
 }  
-# => {:teacher=>"Sami", :students=>["Tony", "Steve", "Bruce"], :classroom=>3, :in_session=>true, :schedule=>{:morning=>"Ruby Basics"}}
+# => {:teacher=>"Ahmad", :students=>["Tony", "Steve", "Bruce"], :classroom=>3, :in_session=>true, :schedule=>{:morning=>"Ruby Basics"}}
 ```
 
 Accessing hash values...
 
 ```ruby
-wdi_class[:teacher]
-# => "Sami"
+sei_class[:teacher]
+# => "Ahmad"
 ```
 Modifying hash values...
 
 ```ruby
-wdi_class[:teacher] = "Michael"
-# => "Michael"
+sei_class[:teacher] = "Ebere"
+# => "Ebere"
 ```
 
 You can also use strings as hash keys... 
 
 ```ruby
 wdi_class = {
-  "teacher" => "Sami",  
+  "teacher" => "Ahmad",  
   "students" => ["Tony", "Steve", "Bruce"],  
   "classroom" => 3,  
   "in_session" => true,  
   "schedule" => {  
     "morning" => "Ruby Basics",
-    "afternoon" => "Enumerables"
+    "afternoon" => "FEWD"
   }
 }  
 ```
 Then can access in this way...
 
 ```ruby
-wdi_class["teacher"]
-# => "Sami"
+sei_class["teacher"]
+# => "Ahmad"
 ```
 
 And modify...
 ```
-wdi_class["teacher"] = "Michael"
-# => "Michael"
+sei_class["teacher"] = "Ebere"
+# => "Ebere"
 ```
 
 **Note the use of => (or "hash rockets") instead of : when using strings as keys.**
@@ -675,7 +675,7 @@ Like arrays, Ruby also provides us with a library of hash methods.
 Returns an array with all the keys in a hash.
 
 ```ruby
-wdi_class.keys
+sei_class.keys
 # => [:teacher, :students, :classroom, :in_session, :schedule]
 ```
 
@@ -690,23 +690,23 @@ classroom = {
 # => {:room=>1}
 
 locations = {
- location_one: "DC",  
+ location_one: "Gotham",  
  location_two: "NY",  
  location_three: "Jeddah"  
 }  
-# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
+# => {:location_one=>"Gotham", :location_two=>"NY", :location_three=>"Jeddah"}
 
 silly_hash = classroom.merge(locations)
-# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
+# => {:room=>1, :location_one=>"Gotham", :location_two=>"NY", :location_three=>"Jeddah"}
 
 classroom
 # => {:room=>1}
 
 locations
-# => {:location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
+# => {:location_one=>"Gotham", :location_two=>"NY", :location_three=>"Jeddah"}
 
 silly_hash
-# => {:room=>1, :location_one=>"DC", :location_two=>"NY", :location_three=>"Jeddah"}
+# => {:room=>1, :location_one=>"Gotham", :location_two=>"NY", :location_three=>"Jeddah"}
 ```
 
 #### Ranges
@@ -797,7 +797,7 @@ We also have `.upto` and `.downto` methods for looping.
 But, the closest equivalent to Javascript's `for` loop is Rubys `for...in` loop
 
 ```rb
-users = ["Alice", "Bob", "Carol"]
+users = ["Blossom", "Bubbles", "Buttercup"]
 for user in users do
   puts user
 end
@@ -882,7 +882,7 @@ puts "You made it out! Congrats!"
 #### [.times](https://ruby-doc.org/core-2.6.1/Integer.html#method-i-times)
 
 ```rb
-users = ["Alice", "Bob", "Carol"]
+users = ["Blossom", "Bubbles", "Buttercup"]
 users.length.times do |index|
   puts users[index]  
 end
