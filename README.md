@@ -208,10 +208,10 @@ Words, just like in Javascript.
 name = "Peter"
 # => "Peter"
 
-full_name = "Peter\Parker"
+full_name = "Peter\nParker"
 # => "Peter\Parker"
 
-single_quote = 'Peter\Parker'
+single_quote = 'Peter\nParker'
 # => "Peter\Parker"
 
 puts full_name
