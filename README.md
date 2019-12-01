@@ -606,7 +606,7 @@ Ahmad = { name: 'Ahmad', age: 0 }
 Notice that is looks exactly like a JS object except the keys are symbols, not strings.
 
 ```ruby
-wdi_class = {
+sei_class = {
   teacher: "Ahmad",  
   students: ["Tony", "Steve", "Bruce"],  
   classroom: 3,
@@ -634,7 +634,7 @@ sei_class[:teacher] = "Ebere"
 You can also use strings as hash keys... 
 
 ```ruby
-wdi_class = {
+sei_class = {
   "teacher" => "Ahmad",  
   "students" => ["Tony", "Steve", "Bruce"],  
   "classroom" => 3,  
