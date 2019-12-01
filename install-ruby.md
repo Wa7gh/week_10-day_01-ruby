@@ -52,7 +52,7 @@ rbenv 1.1.2
 
 
 ## Installations for Windows :
-1. [go to](https://rubyinstaller.org/)
+1. [Ruby Installer](https://rubyinstaller.org/)
 1. install Ruby+Devkit 2.6.X (x64)
 1. checkbox the run rdik install
 1. install in order in the next window 1 , 2 , 3 
